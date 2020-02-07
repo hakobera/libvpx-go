@@ -7,8 +7,10 @@ GENERATOR:
   SysIncludes: ["vpx/vpx_encoder.h", "vpx/vpx_decoder.h", "vpx/vp8.h"]
 
 PARSER: 
-  IncludePaths: [/usr/include]
-  SourcesPaths: ["vpx/vpx-1.6.0/vpx_encoder.h", "vpx/vpx-1.6.0/vpx_decoder.h"]
+  IncludePaths:
+    - /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include
+    - /usr/local/include
+  SourcesPaths: ["vpx/vpx_encoder.h", "vpx/vpx_decoder.h"]
   Defines:
     VP8_FOURCC: 0x30385056
     VP9_FOURCC: 0x30395056
