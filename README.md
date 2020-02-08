@@ -1,13 +1,18 @@
 libvpx-go [![GoDoc](https://godoc.org/github.com/xlab/libvpx-go/vpx?status.svg)](https://godoc.org/github.com/xlab/libvpx-go/vpx)
 =========
 
-Package `vpx` provides Go bindings for [libvpx-1.6.0](http://www.webmproject.org/code/), the WebM Project VPx codec implementation.
+__This is custom build version of [github.com/xlab/libvpx-go](https://godoc.org/github.com/xlab/libvpx-go).
+Original module supports only libvpx-1.6.0, but this module supports libvpx-1.8.x.
+Actually I only confirmed this modules works with libvpx-1.8.2 on macOS 10.15.2.
+API interface (method name, arguments and so on) is also changed due to change of libvpx__
+
+Package `vpx` provides Go bindings for [libvpx-1.8.x](http://www.webmproject.org/code/), the WebM Project VPx codec implementation.
 All the binding code has automatically been generated with rules defined in [vpx.yml](/vpx.yml).
 
 ### Usage
 
 ```bash
-$ brew install libvpx # >= 1.6
+$ brew install libvpx # >= 1.8.0
 $ brew install pkg-config
 # (or use your package manager)
 
